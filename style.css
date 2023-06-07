@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 1340px;     
+    min-height: 100vh;    
+}
+
+/* ======================== Star Main Area ================ */
+
+#site{
+    padding: 5rem 6rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.side{
+    height: 25rem;
+    width: 45rem;
+    background-color: hsla(229, 11%, 40%, 0.226);
+    position: absolute;
+    border-bottom-left-radius: 70px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* ===Navbar AREA=== */
+
+#bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+}
+
+#ham{
+    display: none;
+}
+
+.bar-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bar-a{
+    list-style: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(230, 29%, 20%);
+    font-family: 'Barlow Condensed';
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.bar-a:hover{
+    border-bottom: 1px solid hsl(230, 29%, 20%);
+}
+
+.log:hover{
+    border-bottom: 1px solid hsl(231, 7%, 65%);
+}
+
+.log{
+    color: hsl(231, 7%, 65%);
+}
+
+hr{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: hsl(231, 7%, 65%);
+}
+
+/* === Info AREA=== */
+
+.info{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.image{
+    margin-right: -22.5rem;
+}
+
+.detail{
+    margin-top: 5rem;
+}
+
+.span-div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.detail-span{
+    font-size: 1rem;
+    color: hsl(207, 33%, 95%);
+    background-color: hsl(230, 29%, 20%);
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.detail-span1{
+    font-size: 1rem;
+    color: hsl(231, 7%, 65%);
+    font-weight: 400;
+    font-family: 'Barlow';
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.detail-h1{
+    font-size: 3rem;
+    color: hsl(230, 29%, 20%);
+    margin-top: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Barlow Condensed';
+    width: 70%;
+}
+
+.detail-p{
+    font-size: 1.2rem;
+    color: hsl(230, 11%, 40%);
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: 'Barlow';
+    width: 55%;
+    margin-top: 2rem;
+}
+
+.demo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    background: hsl(0, 100%, 68%);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Barlow Condensed';
+    color: hsl(207, 33%, 95%);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: hsla(5, 85%, 63%, 0.774);
+}
+
+.demo-span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Barlow';
+    color: hsl(231, 7%, 65%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    line-height: 1.5rem;
+    padding: 5px;
+}
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+
+/* ======================== End Footer Area ================ */
+  
+/* ======================== Start Media Querry Area ================ */
+@media screen and (max-width:768px){
+    body{
+        min-width: 768px;
+    }
+
+    #site{
+        padding: 5rem 3rem;
+    }
+    .side{
+        width: 30rem;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .image{
+        margin-top: 2rem;
+    }
+
+    .detail{
+        margin-top: 10rem;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    body{
+        min-width: 375px;
+    }
+
+    #site{
+        padding: 5rem 2rem;
+    }
+
+    #ham{
+        display: grid;
+        padding: 1rem;
+        background: transparent;
+        border: 3px solid hsl(270, 9%, 17%);
+    }
+
+    #ham img:last-child {
+        display: none;
+    }
+      
+    body.open #ham img:first-child {
+        display: none;
+    }
+      
+    body.open #ham img:last-child {
+        display: block;
+    }
+      
+    .overlay {
+        position: fixed;
+        z-index: 2;
+        top: 12rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        backdrop-filter: blur(6px);
+        transition: 0.3s;
+    }
+      
+    body.open .overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bar-div {
+        position: fixed;
+        z-index: 2;
+        top: 12rem;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        padding: 5rem 20px;
+        background: hsl(207, 33%, 95%);
+        box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+        translate: 100% 0;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+      
+    body.open .bar-div {
+        translate: 0;
+    }
+
+    hr{
+        width: 90%;
+        height: 90%;
+    }
+
+    .side{
+        width: 12rem;
+        height: 35rem;
+    }
+
+    .image{
+        width: 490px;
+        margin-right: -9rem;
+    }
+
+    .detail{
+        margin-left: 0;
+    }
+
+    .detail-span1{
+        font-size: 0.85rem;
+    }
+
+    .detail-h1{
+        font-size: 2.5rem;
+        width: 300px;
+    }
+
+    .detail-p{
+        width: 280px;
+        font-size: 1.1rem;
+    }
+
+    .btn{
+        padding: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .demo-span{
+        font-size: 0.7rem;
+    }
+}
